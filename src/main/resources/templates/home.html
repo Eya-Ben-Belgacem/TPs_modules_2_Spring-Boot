@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring MVC with Thymeleaf</title>
+</head>
+<body>
+    <div>
+        <h1>Home Page</h1>
+        <p th:text="${message}">Default message</p>
+        <a th:href="@{/students/list}">View Students</a>
+        <a th:href="@{/students/register}">Register Student</a>
+    </div>
+</body>
+</html>
